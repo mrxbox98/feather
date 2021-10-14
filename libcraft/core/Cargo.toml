@@ -11,4 +11,4 @@ num-traits = "0.2"
 serde = { version = "1", features = ["derive"] }
 strum = "0.21"
 strum_macros = "0.22"
-vek = "0.14"
+vek = "0.15"
