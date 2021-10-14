@@ -9,7 +9,7 @@ ahash = "0.4"
 anyhow = "1"
 arrayvec = { version = "0.7", features = [ "serde" ] }
 bitflags = "1"
-bitvec = "0.21"
+bitvec = "0.22"
 blocks = { path = "../blocks", package = "feather-blocks" }
 byteorder = "1"
 hematite-nbt = { git = "https://github.com/PistonDevelopers/hematite_nbt" }
