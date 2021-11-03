@@ -912,7 +912,7 @@ dependencies = [
  "libcraft-items",
  "log",
  "md-5",
- "num-bigint 0.4.2",
+ "num-bigint 0.4.3",
  "num-traits",
  "once_cell",
  "parking_lot",
@@ -1646,9 +1646,9 @@ dependencies = [
 
 [[package]]
 name = "num-bigint"
-version = "0.4.2"
+version = "0.4.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "74e768dff5fb39a41b3bcd30bb25cf989706c90d028d1ad71971987aa309d535"
+checksum = "f93ab6289c7b344a8a9f60f88d80aa20032336fe78da341afc91c8a2341fc75f"
 dependencies = [
  "autocfg 1.0.1",
  "num-integer",
