@@ -402,7 +402,7 @@ dependencies = [
  "libc",
  "num-integer",
  "num-traits",
- "time",
+ "time 0.1.43",
  "winapi",
 ]
 
@@ -2582,14 +2582,14 @@ dependencies = [
 
 [[package]]
 name = "simple_logger"
-version = "1.13.0"
+version = "1.15.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b7de33c687404ec3045d4a0d437580455257c0436f858d702f244e7d652f9f07"
+checksum = "12413e3c006deb4f16b9f43192d419c462e21134d0a4e63532fbd050f546a561"
 dependencies = [
  "atty",
- "chrono",
  "colored 1.9.3",
  "log",
+ "time 0.3.5",
  "winapi",
 ]
 
@@ -2771,6 +2771,23 @@ dependencies = [
  "libc",
  "winapi",
 ]
+
+[[package]]
+name = "time"
+version = "0.3.5"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "41effe7cfa8af36f439fac33861b66b049edc6f9a32331e2312660529c1c24ad"
+dependencies = [
+ "itoa",
+ "libc",
+ "time-macros",
+]
+
+[[package]]
+name = "time-macros"
+version = "0.2.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "25eb0ca3468fc0acc11828786797f6ef9aa1555e4a211a60d64cc8e4d1be47d6"
 
 [[package]]
 name = "tinyvec"
@@ -3314,7 +3331,7 @@ checksum = "55a275df0190f65f9e62f25b6bc8505a55cc643e433c822fb03a5e3e11fe1c29"
 dependencies = [
  "byteorder",
  "serde",
- "time",
+ "time 0.1.43",
  "wasmer-types",
 ]
 
@@ -3460,5 +3477,5 @@ dependencies = [
  "crc32fast",
  "flate2",
  "thiserror",
- "time",
+ "time 0.1.43",
 ]
