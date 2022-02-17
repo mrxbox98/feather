@@ -12,7 +12,7 @@ blocks = { path = "../blocks", package = "feather-blocks" }
 bytemuck = "1"
 byteorder = "1"
 bytes = "1.1"
-cfb8 = "0.7"
+cfb8 = "0.8"
 flate2 = "1"
 
 hematite-nbt = { git = "https://github.com/PistonDevelopers/hematite_nbt" }
