@@ -15,7 +15,7 @@ itertools = "0.10"
 log = "0.4"
 parking_lot = "0.11"
 quill-common = { path = "../../quill/common" }
-smartstring = "0.2"
+smartstring = "1.0"
 utils = { path = "../utils", package = "feather-utils" }
 uuid = { version = "0.8", features = [ "v4" ] }
 libcraft-core = { path = "../../libcraft/core" }
