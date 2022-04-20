@@ -47,7 +47,7 @@ tokio = { version = "1", features = [ "full" ] }
 toml = "0.5"
 ureq = { version = "2", features = [ "json" ] }
 utils = { path = "../utils", package = "feather-utils" }
-uuid = "0.8"
+uuid = "1.0"
 slab = "0.4"
 libcraft-core = { path = "../../libcraft/core" }
 libcraft-items = { path = "../../libcraft/items" }
