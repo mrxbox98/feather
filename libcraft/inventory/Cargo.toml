@@ -8,4 +8,4 @@ edition = "2018"
 
 [dependencies]
 libcraft-items = { path = "../items" }
-parking_lot = "0.11"
+parking_lot = "0.12"
