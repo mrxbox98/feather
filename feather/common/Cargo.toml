@@ -13,7 +13,7 @@ ecs = { path = "../ecs", package = "feather-ecs" }
 flume = "0.10"
 itertools = "0.10"
 log = "0.4"
-parking_lot = "0.11"
+parking_lot = "0.12"
 quill-common = { path = "../../quill/common" }
 smartstring = "0.2"
 utils = { path = "../utils", package = "feather-utils" }
