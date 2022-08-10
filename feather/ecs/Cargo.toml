@@ -5,7 +5,7 @@ authors = [ "caelunshun <caelunshun@gmail.com>" ]
 edition = "2018"
 
 [dependencies]
-ahash = "0.7"
+ahash = "0.8"
 anyhow = "1"
 hecs = { git = "https://github.com/feather-rs/feather-hecs" }
 log = "0.4"
