@@ -37,11 +37,12 @@ checksum = "739f4a8db6605981345c5654f3a85b056ce52f37a39d34da03f25bf2151ea16e"
 
 [[package]]
 name = "ahash"
-version = "0.7.6"
+version = "0.8.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fcb51a0695d8f838b1ee009b3fbf66bda078cd64590202a864a8f3e8c4315c47"
+checksum = "464b3811b747f8f7ebc8849c9c728c39f6ac98a055edad93baf9eb330e3f8f9d"
 dependencies = [
- "getrandom 0.2.3",
+ "cfg-if 1.0.0",
+ "getrandom 0.2.8",
  "once_cell",
  "version_check",
 ]
@@ -711,7 +712,7 @@ dependencies = [
 name = "feather-base"
 version = "0.1.0"
 dependencies = [
- "ahash 0.7.6",
+ "ahash 0.8.1",
  "anyhow",
  "arrayvec 0.7.1",
  "bitflags",
@@ -779,7 +780,7 @@ dependencies = [
 name = "feather-common"
 version = "0.1.0"
 dependencies = [
- "ahash 0.7.6",
+ "ahash 0.8.1",
  "anyhow",
  "feather-base",
  "feather-blocks",
@@ -804,7 +805,7 @@ dependencies = [
 name = "feather-datapacks"
 version = "0.1.0"
 dependencies = [
- "ahash 0.7.6",
+ "ahash 0.8.1",
  "anyhow",
  "log",
  "serde",
@@ -819,7 +820,7 @@ dependencies = [
 name = "feather-ecs"
 version = "0.1.0"
 dependencies = [
- "ahash 0.7.6",
+ "ahash 0.8.1",
  "anyhow",
  "feather-utils",
  "hecs",
@@ -831,7 +832,7 @@ dependencies = [
 name = "feather-plugin-host"
 version = "0.1.0"
 dependencies = [
- "ahash 0.7.6",
+ "ahash 0.8.1",
  "anyhow",
  "bincode",
  "bumpalo",
@@ -890,7 +891,7 @@ dependencies = [
 name = "feather-server"
 version = "0.1.0"
 dependencies = [
- "ahash 0.7.6",
+ "ahash 0.8.1",
  "anyhow",
  "base64",
  "chrono",
@@ -1090,14 +1091,14 @@ dependencies = [
 
 [[package]]
 name = "getrandom"
-version = "0.2.3"
+version = "0.2.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7fcd999463524c52659517fe2cea98493cfe485d10565e7b0fb07dbba7ad2753"
+checksum = "c05aeb6a22b8f62540c194aac980f2115af067bfe15a0734d7277a768d396b31"
 dependencies = [
  "cfg-if 1.0.0",
  "js-sys",
  "libc",
- "wasi 0.10.2+wasi-snapshot-preview1",
+ "wasi 0.11.0+wasi-snapshot-preview1",
  "wasm-bindgen",
 ]
 
@@ -1305,15 +1306,15 @@ dependencies = [
 
 [[package]]
 name = "libc"
-version = "0.2.102"
+version = "0.2.137"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a2a5ac8f984bfcf3a823267e5fde638acc3325f6496633a5da6bb6eb2171e103"
+checksum = "fc7fcc620a3bff7cdd7a365be3376c97191aeaccc2a603e600951e452615bf89"
 
 [[package]]
 name = "libcraft-blocks"
 version = "0.1.0"
 dependencies = [
- "ahash 0.7.6",
+ "ahash 0.8.1",
  "bincode",
  "bytemuck",
  "flate2",
@@ -1599,7 +1600,7 @@ version = "0.6.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "729eb334247daa1803e0a094d0a5c55711b85571179f5ec6e53eccfdf7008958"
 dependencies = [
- "getrandom 0.2.3",
+ "getrandom 0.2.8",
 ]
 
 [[package]]
@@ -1754,9 +1755,9 @@ dependencies = [
 
 [[package]]
 name = "once_cell"
-version = "1.8.0"
+version = "1.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "692fcb63b64b1758029e0a96ee63e049ce8c5948587f2f7208df04625e5f6b56"
+checksum = "86f0b0d4bf799edbc74508c1e8bf170ff5f41238e5f8225603ca7caaae2b7860"
 
 [[package]]
 name = "opaque-debug"
@@ -2128,7 +2129,7 @@ version = "0.6.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d34f1408f55294453790c48b2f1ebbb1c5b4b7563eb1f418bcfcfdbb06ebb4e7"
 dependencies = [
- "getrandom 0.2.3",
+ "getrandom 0.2.8",
 ]
 
 [[package]]
@@ -2971,7 +2972,7 @@ version = "0.8.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "bc5cf98d8186244414c848017f0e2676b3fcb46807f6668a97dfe67359a3c4b7"
 dependencies = [
- "getrandom 0.2.3",
+ "getrandom 0.2.8",
  "serde",
 ]
 
@@ -3003,9 +3004,9 @@ dependencies = [
 
 [[package]]
 name = "version_check"
-version = "0.9.3"
+version = "0.9.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5fecdca9a5291cc2b8dcf7dc02453fee791a280f3743cb0905f8822ae463b3fe"
+checksum = "49874b5167b65d7193b8aba1567f5c7d93d001cafc34600cee003eda787e483f"
 
 [[package]]
 name = "waker-fn"
@@ -3021,9 +3022,9 @@ checksum = "cccddf32554fecc6acb585f82a32a72e28b48f8c4c1883ddfeeeaa96f7d8e519"
 
 [[package]]
 name = "wasi"
-version = "0.10.2+wasi-snapshot-preview1"
+version = "0.11.0+wasi-snapshot-preview1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fd6fbd9a79829dd1ad0cc20627bf1ed606756a7f77edff7b66b7064f9cb327c6"
+checksum = "9c8d87e72b64a3b4db28d11ce29237c246188f4f51057d65a7eab63b7987e423"
 
 [[package]]
 name = "wasm-bindgen"
@@ -3295,7 +3296,7 @@ checksum = "0a992dcafd11c584f3b8d84b7b4c6af350b63db03cf4452fc38647e8eab45994"
 dependencies = [
  "bincode",
  "generational-arena",
- "getrandom 0.2.3",
+ "getrandom 0.2.8",
  "libc",
  "serde",
  "thiserror",

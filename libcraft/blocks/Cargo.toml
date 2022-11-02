@@ -9,7 +9,7 @@ libcraft-core = { path = "../core" }
 libcraft-items = { path = "../items" }
 libcraft-macros = { path = "../macros" }
 
-ahash = "0.7"
+ahash = "0.8"
 bincode = "1"
 bytemuck = { version = "1", features = ["derive"] }
 flate2 = "1"

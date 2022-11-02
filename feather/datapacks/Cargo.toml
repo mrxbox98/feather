@@ -5,7 +5,7 @@ authors = [ "caelunshun <caelunshun@gmail.com>" ]
 edition = "2018"
 
 [dependencies]
-ahash = "0.7"
+ahash = "0.8"
 anyhow = "1"
 log = "0.4"
 serde = { version = "1", features = [ "derive" ] }
