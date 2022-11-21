@@ -11,7 +11,7 @@ base = { path = "../base", package = "feather-base" }
 blocks = { path = "../blocks", package = "feather-blocks" }
 bytemuck = "1"
 byteorder = "1"
-bytes = "1.1"
+bytes = "1.3"
 cfb8 = "0.7"
 flate2 = "1"
 
