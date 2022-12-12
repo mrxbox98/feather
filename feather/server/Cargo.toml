@@ -16,7 +16,7 @@ path = "src/lib.rs"
 ahash = "0.7"
 anyhow = "1"
 base = { path = "../base", package = "feather-base" }
-base64 = "0.13"
+base64 = "0.20"
 chrono = "0.4"
 colored = "2"
 common = { path = "../common", package = "feather-common" }
