@@ -21,7 +21,7 @@ libcraft-particles = { path = "../../libcraft/particles" }
 libcraft-text = { path = "../../libcraft/text" }
 libcraft-inventory = { path = "../../libcraft/inventory" } 
 
-nom = "5"
+nom = "7"
 nom_locate = "2"
 num-derive = "0.3"
 num-traits = "0.2"
