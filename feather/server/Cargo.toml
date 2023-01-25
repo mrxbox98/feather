@@ -13,7 +13,7 @@ name = "feather-server"
 path = "src/lib.rs"
 
 [dependencies]
-ahash = "0.7"
+ahash = "0.8"
 anyhow = "1"
 base = { path = "../base", package = "feather-base" }
 base64 = "0.13"
